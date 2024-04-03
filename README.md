@@ -8,7 +8,7 @@
 │   ├── HackTheBox_Codify Writeup
 │   ├── HackTheBox_LoveTok Writeup
 │   └── HackTheBox_Topology Writeup
-├── picoCTF/2024
+├── picoCTF
 │   └── 2024 
 │       ├── picoCTF 2024 writeup 
 │       └── Topic 
