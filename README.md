@@ -8,8 +8,16 @@
 │   ├── HackTheBox_Codify Writeup
 │   ├── HackTheBox_LoveTok Writeup
 │   └── HackTheBox_Topology Writeup
-├── picoCTF
-│   └── picoCTF 2024 writeup
+├── picoCTF/2024
+│   └── 2024 
+│       ├── picoCTF 2024 writeup 
+│       └── Topic 
+│           ├── General Skills
+│           ├── Web Exploitation
+│           ├── Forensics
+│           ├── Binary Exploitation
+│           ├── Cryptography
+│           └── Reverse Engineering
 └── Others
     └── Share ShaRCE Writeup
 ```
