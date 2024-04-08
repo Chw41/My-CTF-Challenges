@@ -6,7 +6,7 @@
 ├── HackTheBox
 │   ├── HackTheBox_ Pilgrimage Writeup
 │   ├── HackTheBox_ Codify Writeup
-│   ├── HackTheBox_LoveTok Writeup
+│   ├── HackTheBox_ LoveTok Writeup
 │   └── HackTheBox_Topology Writeup
 ├── picoCTF
 │   └── 2024 
