@@ -19,5 +19,5 @@
 │           ├── Cryptography
 │           └── Reverse Engineering
 └── Others
-    └── Share ShaRCE Writeup
+    └── Share ShaRCE
 ```
