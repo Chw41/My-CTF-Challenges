@@ -699,20 +699,20 @@ https://github.com/satoki/ctf_writeups/tree/master/picoCTF_2024/elements?ref=blo
 ![image](https://hackmd.io/_uploads/ryB2PoA6p.png)
 
 ### interencdec Solution
-enc_flag
+enc_flag\
 ![image](https://hackmd.io/_uploads/Byamdj0TT.png)
 > YidkM0JxZGtwQlRYdHFhR3g2YUhsZmF6TnFlVGwzWVROclh6YzRNalV3YUcxcWZRPT0nCg==
 
-"==" 疑似Base64
-● Base64 decode
+"==" 疑似Base64\
+● Base64 decode\
 ![image](https://hackmd.io/_uploads/ByVOuoCaa.png)
 > b'd3BqdkpBTXtqaGx6aHlfazNqeTl3YTNrXzc4MjUwaG1qfQ=='
 
-● Base64 double decode
+● Base64 double decode\
 ![image](https://hackmd.io/_uploads/SyeFTiRpp.png)
 > wpjvJAM{jhlzhy_k3jy9wa3k_78250hmj}
 
-● Caesar Decoder
+● Caesar Decoder\
 https://www.dcode.fr/caesar-cipher
 ![image](https://hackmd.io/_uploads/rkXnl2RaT.png)
 ### GET FLAG
@@ -725,7 +725,7 @@ https://www.dcode.fr/caesar-cipher
 ![image](https://hackmd.io/_uploads/H1m9bnATa.png)
 
 ### Scan Surprise Solution
-flag.png
+flag.png\
 ![image](https://hackmd.io/_uploads/H1_xG2A6T.png)
 > https://www.google.com/search?q=picoCTF%7Bp33k_%40_b00_b5ce2572%7D&ie=UTF-8&oe=UTF-8&hl=en-us&client=safari
 
