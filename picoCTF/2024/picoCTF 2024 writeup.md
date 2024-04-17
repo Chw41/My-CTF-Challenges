@@ -960,3 +960,8 @@ Enter your choice: 4
 
 ### GET FLAG
 **FLAG:picoCTF{my_first_heap_overflow_1ad0e1a6}**
+
+# Final Team Score
+![image](https://hackmd.io/_uploads/HJhLRley0.png)
+![image](https://hackmd.io/_uploads/rkWqRxeJC.png)
+![image](https://hackmd.io/_uploads/BJSoCelJ0.png)
