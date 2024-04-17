@@ -742,7 +742,7 @@ ssh -p 57179 ctf-player@rhea.picoctf.net
 
 ## CanYouSee
 ![image](https://hackmd.io/_uploads/B1vFaeJRp.png)
-ukn_reality.jpg
+ukn_reality.jpg\
 ![image](https://hackmd.io/_uploads/rkVM0x1AT.png)
 
 ## Secret of the Polyglot
@@ -766,7 +766,7 @@ cp flag2of2-final.pdf flag2of2-final.png
 ## Mob psycho
 ![image](https://hackmd.io/_uploads/HJ912G106.png)
 
-mobpsycho.apk
+mobpsycho.apk\
 ![image](https://hackmd.io/_uploads/S14A2zyA6.png)
 
 ### Mob psycho Solution
