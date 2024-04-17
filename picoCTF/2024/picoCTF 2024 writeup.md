@@ -33,7 +33,7 @@ https://play.picoctf.org/events/73/
 ![image](https://hackmd.io/_uploads/B1K0zcR6p.png)
 
 ### Commitment Issues Solution
-● 在refs/heads/master 下看到
+● 在refs/heads/master 下看到\
 ![image](https://hackmd.io/_uploads/SkiAX5Cap.png)
 ```
 十六進制字串
@@ -196,7 +196,7 @@ http://titan.picoctf.net:60527/
 ● CONTACT: http://titan.picoctf.net:60527/contact.html
 ![image](https://hackmd.io/_uploads/Hy9sBo0Ta.png)
 
-在ABOUT頁面中:
+在ABOUT頁面中:\
 ![image](https://hackmd.io/_uploads/SJCfIsATa.png)
 > 出現一個詭異的編碼
 > notify_true="cGljb0NURnt3ZWJfc3VjYzNzc2Z1bGx5X2QzYzBkZWRfMTBmOTM3NmZ9"
@@ -257,7 +257,7 @@ Connection: close
 ```
 > 問題不在這
 #### 2. 2fa authentication
-http://titan.picoctf.net:65271/dashboard
+http://titan.picoctf.net:65271/dashboard \
 ![image](https://hackmd.io/_uploads/Hy3wIM10p.png)
 
 ![image](https://hackmd.io/_uploads/H1DZPfk0a.png)
@@ -288,7 +288,7 @@ otp=chwchw
 
 ## No Sql Injection
 ![image](https://hackmd.io/_uploads/ry2nI3RTa.png)
-http://atlas.picoctf.net:61553/
+http://atlas.picoctf.net:61553/ \
 ![image](https://hackmd.io/_uploads/Hy0CLhCp6.png)
 
 Source Code:
@@ -384,7 +384,7 @@ Content-Length: 237
 ### GET FLAG
 >cGljb0NURntqQmhEMnk3WG9OelB2XzFZeFM5RXc1cUwwdUk2cGFzcWxfaW5qZWN0aW9uX2UzMWVmMzI0fQ==
 
-(Base64 Decode)
+(Base64 Decode)\
 ![image](https://hackmd.io/_uploads/rkaEMvgAp.png)
 
 **FLAG:picoCTF{#0TP_Bypvss_SuCc3$S_e1eb16ed}**
