@@ -1,5 +1,5 @@
 ---
-title: 'picoCTF 2024 writeup'
+title: 'picoCTF 2024 Writeup'
 disqus: hackmd
 ---
 
