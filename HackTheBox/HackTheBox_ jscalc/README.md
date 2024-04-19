@@ -3,7 +3,7 @@ title: 'HackTheBox: jscalc'
 disqus: hackmd
 ---
 
-HackTheBox: jscalc
+HackTheBox: jscalc Writeup
 ===
 
 
