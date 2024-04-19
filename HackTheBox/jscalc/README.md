@@ -24,7 +24,7 @@ http://94.237.57.59:46780/
 
 ![image](https://hackmd.io/_uploads/rkVED31W0.png)
 
-(Calculate)
+(Calculate)\
 ![image](https://hackmd.io/_uploads/rk8YO6kW0.png)
 
 ![image](https://hackmd.io/_uploads/SJgyca1-0.png)
@@ -84,8 +84,8 @@ form.addEventListener('submit', e => {
 });
 
 ```
-> "formula":"100*10-3+340"
-> 用JSON格式 POST 到 fetch /api/calculate
+> "formula":"100*10-3+340"\
+> 用JSON格式 POST 到 fetch /api/calculate\
 > Content-Type: application/json
 
 ● /routes/index.js
@@ -115,7 +115,7 @@ router.post('/api/calculate', (req, res) => {
 module.exports = router;
 
 ```
-> GET / 顯示index.html
+> GET / 顯示index.html\
 > POST /api/calculate，如果存在formula，則使用Calculator.calculate運算
 
 ### 2.Attempt
