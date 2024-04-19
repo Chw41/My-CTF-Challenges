@@ -3,7 +3,7 @@ title: 'HackTheBox: LoveTok'
 disqus: hackmd
 ---
 
-HackTheBox: LoveTok
+HackTheBox: LoveTok Writeup
 ===
 
 
