@@ -6,8 +6,8 @@
 ├── HackTheBox
 │   ├── HackTheBox_ Pilgrimage Writeup
 │   ├── HackTheBox_ Codify Writeup
-│   ├── HackTheBox_ LoveTok Writeup
 │   ├── HackTheBox_ Topology Writeup
+│   ├── HackTheBox_ LoveTok/
 │   └── HackTheBox_ jscalc/
 ├── picoCTF
 │   └── 2024 
