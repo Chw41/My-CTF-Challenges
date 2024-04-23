@@ -8,7 +8,8 @@
 │   ├── HackTheBox_ Codify Writeup
 │   ├── HackTheBox_ Topology Writeup
 │   ├── HackTheBox_ LoveTok/
-│   └── HackTheBox_ jscalc/
+│   ├── HackTheBox_ jscalc/
+│   └── HackTheBox_ Neonify/
 ├── picoCTF
 │   └── 2024 
 │       ├── picoCTF 2024 writeup 
