@@ -88,7 +88,7 @@ neon=<%= 7*7 %>
 neon=chw%0A%3C%257%2A7%25%3E
 ```
 ![image](https://hackmd.io/_uploads/SylqO_L-C.png)
-> (1) 在網頁上直接輸入會被視為字元，使用 BurpSuite Repeater
+> (1) 在網頁上直接輸入會被視為字元，使用 BurpSuite Repeater\
 > (2) 嘗試 double encode
 
 ● 嘗試 double encode
@@ -97,9 +97,9 @@ neon=chw%0A%253C%2525%25207%252A7%2520%2525%253E
 ```
 ![image](https://hackmd.io/_uploads/HkpyWt8bA.png)
 
-> 顯示 encode一次的值，代表:
-> (1) 輸入有效
-> (2) 確認系統會decode 一次
+> 顯示 encode一次的值，代表:\
+> (1) 輸入有效\
+> (2) 確認系統會decode 一次\
 > Final 試到天荒地老，後來才發現使用 <%= 才會顯示結果
 
 ● chw%0A<%= 7*7 %>
