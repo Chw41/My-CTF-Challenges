@@ -3,7 +3,7 @@ title: 'HackTheBox: Neonify'
 disqus: hackmd
 ---
 
-HackTheBox: Neonify
+HackTheBox: Neonify Writeup
 ===
 
 
