@@ -32,9 +32,9 @@ nc 83.136.252.62 49263
 > ![image](https://hackmd.io/_uploads/S1Whl43pT.png)
 
 ### Get FLAG
-:::danger
-'1' 'l' 'I' 分不清楚
-:::
+> [!CAUTION]
+> '1' 'l' 'I' 分不清楚
+
 **FLAG: HTB{tH15_1s_4_r3aLly_l0nG_fL4g_i_h0p3_f0r_y0Ur_s4k3_tH4t_y0U_sCr1pTEd_tH1s_oR_els3_iT_t0oK_qU1t3_l0ng!!}**
 
 ## Stop Drop and Roll
@@ -566,7 +566,7 @@ Your Name:
 > 不可行
 
 ## Labyrinth Linguist
-![image](https://hackmd.io/_uploads/Byv1y1CTa.png)
+![image](https://hackmd.io/_uploads/Byv1y1CTa.png)\
 http://83.136.248.36:46539/
 ![image](https://hackmd.io/_uploads/r1zXyJCTT.png)
 
