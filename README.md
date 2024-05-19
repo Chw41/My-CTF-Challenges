@@ -14,13 +14,11 @@
 ├── picoCTF
 │   └── 2024 
 │       ├── picoCTF 2024 writeup 
-│       └── Topic 
-│           ├── General Skills
-│           ├── Web Exploitation
-│           ├── Forensics
-│           ├── Binary Exploitation
-│           ├── Cryptography
-│           └── Reverse Engineering
+│       └── Topic/..
+├── HTB Cyber Apocalypse CTF
+│   └── 2024 
+│       ├── Cyber Apocalypse 2024: Hacker Royale writeup
+│       └── Topic/..
 └── Others
     └── Share ShaRCE
 ```
