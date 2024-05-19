@@ -1,10 +1,5 @@
 
----
-title: 'Cyber Apocalypse 2024: Hacker Royale'
-disqus: hackmd
----
-
-Cyber Apocalypse 2024: Hacker Royale
+Cyber Apocalypse 2024: Hacker Royale writeup
 ===
 
 # Table of Contents
