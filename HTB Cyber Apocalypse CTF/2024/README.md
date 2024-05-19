@@ -570,9 +570,5 @@ Your Name:
 http://83.136.248.36:46539/
 ![image](https://hackmd.io/_uploads/r1zXyJCTT.png)
 
-### Labyrinth Linguist Solution
-
-
-
-
+# FINAL
 ![image](https://hackmd.io/_uploads/B1xMzb90aa.png)
