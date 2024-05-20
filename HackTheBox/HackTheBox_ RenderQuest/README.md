@@ -1,9 +1,9 @@
 ---
-title: 'HackTheBox: RenderQuest'
+title: 'HackTheBox: RenderQuest writeup'
 disqus: hackmd
 ---
 
-HackTheBox: RenderQuest
+HackTheBox: RenderQuest writeup
 ===
 
 
@@ -20,7 +20,7 @@ https://app.hackthebox.com/challenges/RenderQuest
 ### Initial Enumeration
 
 ●Start Machine: 
-http://94.237.57.59:38703
+http://94.237.57.59:38703 \
 (301) http://94.237.57.59:38703/render?page=index.tpl
 ![94.237.57.59_38703_render_page=index.tpl](https://hackmd.io/_uploads/Skb9oZTWC.png)
 
@@ -87,7 +87,7 @@ neon=<%= 7*7 %>
 neon=chw%0A%3C%257%2A7%25%3E
 ```
 ![image](https://hackmd.io/_uploads/SylqO_L-C.png)
-> (1) 在網頁上直接輸入會被視為字元，使用 BurpSuite Repeater
+> (1) 在網頁上直接輸入會被視為字元，使用 BurpSuite Repeater\
 > (2) 嘗試 double encode
 
 ● 嘗試 double encode
