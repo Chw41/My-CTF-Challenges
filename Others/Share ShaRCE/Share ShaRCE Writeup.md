@@ -21,7 +21,7 @@ https://hackmd.io/@entroy/B1XDG0rBa
 
 ![image](https://hackmd.io/_uploads/By3khhSHT.png)
 
-●LAB: http://chw.com:8080/
+●LAB: http://chw.com:8080/ \
 ![image](https://hackmd.io/_uploads/HyJS3MGSa.png)
 
 | ![image](https://hackmd.io/_uploads/S1CbZXzBT.png) | ![image](https://hackmd.io/_uploads/BywXb7frT.png) |
@@ -31,13 +31,13 @@ https://hackmd.io/@entroy/B1XDG0rBa
 ## Solution
 
 ### 1. Attempt
-●未選擇任何檔案
-![image](https://hackmd.io/_uploads/H1LdzXGB6.png)
-●上傳 test.txt
-![image](https://hackmd.io/_uploads/rkPjMXzrT.png)
-●上傳 test.zip (壓縮test.txt)
-![image](https://hackmd.io/_uploads/ryVDrmMH6.png)
-●上傳 index.zip (一定要包含index.html)
+●未選擇任何檔案\
+![image](https://hackmd.io/_uploads/H1LdzXGB6.png)\
+●上傳 test.txt\
+![image](https://hackmd.io/_uploads/rkPjMXzrT.png)\
+●上傳 test.zip (壓縮test.txt)\
+![image](https://hackmd.io/_uploads/ryVDrmMH6.png)\
+●上傳 index.zip (一定要包含index.html)\
 ![image](https://hackmd.io/_uploads/B1zrXXMr6.png)
 
 app.py
@@ -140,11 +140,11 @@ if __name__ == "__main__":
 ```
 ●[path.join](https://docs.python.org/3/library/os.path.html): 將多個路徑組合成一個完整的路徑 (避免Path traversal)
 
-● ../app/database.db
+● ../app/database.db\
 ![image](https://hackmd.io/_uploads/Bk-Es24rp.png)
 
 ### 2. Burp-Suite Attempt
-http://chw.com:8080
+http://chw.com:8080 \
 ![image](https://hackmd.io/_uploads/Hy36AnNST.png)
 #### 2.1 admin/admin (NOT Register)
 ![image](https://hackmd.io/_uploads/HJBbk6ES6.png)
@@ -232,13 +232,13 @@ the VERSION_CONTROL environment variable.  Here are the values:
   adding: image.jfif (deflated 2%)
   有壓縮到index.html
   
-( Upload index.zip )
+( Upload index.zip )\
 ![image](https://hackmd.io/_uploads/HkNyzTBHp.png)
 
 ### 4. Get Flag
 > **FLAG{dummyflag}**
 
-● WinRAR GUI也有symbolic link壓縮功能
+● WinRAR GUI也有symbolic link壓縮功能\
 ![image](https://hackmd.io/_uploads/H19oDTrrT.png)
 
 ###### tags: `CTF` `Web` `Symbolic Link` 
