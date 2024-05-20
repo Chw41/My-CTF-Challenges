@@ -3,7 +3,7 @@ title: 'HackTheBox: RenderQuest writeup'
 disqus: hackmd
 ---
 
-HackTheBox: RenderQuest writeup
+HackTheBox: RenderQuest Writeup
 ===
 
 
