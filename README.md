@@ -22,7 +22,7 @@
 ├── AIS3 Pre-exam CTF
 │   └── 2024 
 │       ├── AIS3 Pre-exam CTF 2024 writeup
-│       └── Topic/.. &exploit
+│       └── Topic/.. & exploit
 └── Others
     └── Share ShaRCE
 ```
