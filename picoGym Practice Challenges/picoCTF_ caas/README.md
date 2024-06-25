@@ -1,11 +1,10 @@
 ---
-title: 'picoCTF: caas Writeup'
+title: 'picoCTF: caas Writeup & Patch'
 disqus: hackmd
 ---
 
-picoCTF: caas Writeup
+picoCTF: caas Writeup & Patch
 ===
-
 
 ## Table of Contents
 
@@ -107,8 +106,8 @@ https://caas.mars.picoctf.net/cowsay/chw;%20cat%20f*
 
 - 依照上面writeup:
 在 shell 中，payload 會被解讀成兩個指令:
-1. /usr/games/cowsay chw
-2. ls (or cat f*)
+1. $ /usr/games/cowsay chw
+2. $ ls (or cat f*)
 
 
 ## Patch
