@@ -854,13 +854,13 @@ encrypt_all_ascii(public_key)
 (忘了截圖)
 作者提供一個 ELF format binary: flag-printer-dist
 ### The Long Print Solution
-#### IDA
+#### 1. IDA
 用 IDA 8.3 開啟\
 ![image](https://hackmd.io/_uploads/B1Q8kIKIR.png)
 
 ![image](https://hackmd.io/_uploads/HyLHjSKUA.png)
 
-#### 對 main function Decompile
+#### 2. 對 main function Decompile
 在 main function (按F5): Decompile ，可以看到 Pseudocode
 ```Pseudocode=
 int __fastcall main(int argc, const char **argv, const char **envp)
@@ -887,12 +887,12 @@ int __fastcall main(int argc, const char **argv, const char **envp)
 ```
 > &secret[4 * i] 與 key[*&secret[4 * i + 4]] 做XOR 存在 v4\
 > sleep(0x3674u) 睡死了
-#### Edit Patch Bytes
+#### 3. Edit Patch Bytes
 在 sleep() 更改 Patch Bytes
 ![image](https://hackmd.io/_uploads/rJxgeLFIR.png)
 > 將 1 移至 EDI暫存器\
 > BF 01 00 00 00 E8 7B FE FF FF 8B 45 F4 89 C6 48
-####  Apply patches to input file
+####  4. Apply patches to input file
 ```Pseudocode=11
    for ( j = 0; j <= 3; ++j )
     {
