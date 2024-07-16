@@ -21,3 +21,4 @@ REVOKE ALL ON *.* FROM web_user;
 REVOKE ALL ON web.* FROM web_user;
 GRANT SELECT ON web.* TO web_user;
 GRANT INSERT ON web.* TO web_user;
+GRANT DELETE ON web.* TO web_user;

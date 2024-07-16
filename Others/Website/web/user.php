@@ -7,6 +7,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $username = get_post_param('username', '');
     $password = get_post_param('password', '');
     $url = get_post_param('url', '');
+    $id = get_post_param('id', '');
 
     if ($action == 'register') {
         $pdo = get_pdo();
@@ -39,6 +40,12 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     } else if ($action == 'insert') {
         if ($_SESSION['user_id']) {
             $user_id = $_SESSION['user_id'];
+
+            if (!preg_match('/^https?:\/\//i', $url)) {
+                echo 'Must start with https:// or https://';
+                exit;
+            }
+
             $pdo = get_pdo();
             $stmt = $pdo->query("INSERT INTO urls (url, user_id) VALUES ('$url', '$user_id')");
 
@@ -46,6 +53,21 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                 echo 'Insert!';
             } else {
                 echo 'Failed to insert!';
+            }
+        } else {
+            echo 'Login first!';
+        }
+    } else if ($action == 'delete') {
+        if ($_SESSION['user_id']) {
+            $user_id = $_SESSION['user_id'];
+            $pdo = get_pdo();
+            $stmt = $pdo->prepare("DELETE FROM urls where id=? and user_id=?");
+            $stmt->execute([$id, $user_id]);
+
+            if ($stmt->rowCount() > 0) {
+                echo 'Delete!';
+            } else {
+                echo 'Failed to delete!';
             }
         } else {
             echo 'Login first!';

@@ -263,16 +263,16 @@ if (!$_SESSION['user_id']) {
                 <div class="formBx">
                     <form id="registerForm">
                         <h2>Url list</h2>
-                        <ul>
+                        <ul id="itemList">
                             <?php
                             $pdo = get_pdo();
                             $stmt = $pdo->prepare("SELECT * FROM urls WHERE user_id =?");
                             $stmt->execute([$_SESSION['user_id']]);
 
                             while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
-                                $ch = curl_init($row['url']); 
-                                curl_setopt($ch, CURLOPT_HEADER, 0); 
-                                curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1); 
+                                $ch = curl_init($row['url']);
+                                curl_setopt($ch, CURLOPT_HEADER, 0);
+                                curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
                                 curl_exec($ch);
 
                                 $live = 'live!';
@@ -281,7 +281,8 @@ if (!$_SESSION['user_id']) {
                                     $live = 'Error!';
                                 }
 
-                                echo '<li>' . htmlspecialchars($row['url'], ENT_QUOTES) . ", $live" . '</li>';
+                                $id = $row['id'];
+                                echo "<li id=$id>" . htmlspecialchars($row['url'], ENT_QUOTES) . ", $live" . '</li>';
                                 curl_close($ch);
                             }
                             ?>
@@ -299,5 +300,40 @@ if (!$_SESSION['user_id']) {
         </div>
     </section>
 </body>
+<script>
+    document.getElementById('itemList').addEventListener('click', function (event) {
+        console.log(event.target);
+        console.log(event.target.nodeName);
+        if (event.target && event.target.nodeName === 'LI') {
+            const itemId = event.target.id;
+            const userConfirmed = confirm('Are you sure you want to delete this item?');
+
+            if (userConfirmed) {
+                fetch('/user.php', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/x-www-form-urlencoded'
+                    },
+                    body: `action=delete&id=${itemId}`
+                })
+                    .then(response => {
+                        if (!response.ok) {
+                            throw new Error('Network response was not ok');
+                        }
+                        return response.text();
+                    })
+                    .then(data => {
+                        // Remove the element from the DOM
+                        event.target.remove();
+                        alert('Item deleted successfully');
+                    })
+                    .catch(error => {
+                        console.error('There was a problem with the fetch operation:', error);
+                        alert('Failed to delete the item');
+                    });
+            }
+        }
+    });
+</script>
 
 </html>
