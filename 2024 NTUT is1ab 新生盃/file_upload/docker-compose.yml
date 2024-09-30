@@ -1,0 +1,24 @@
+version: '3.8'
+
+services:
+  web:
+    image: nginx:stable
+    ports: 
+      - "127.0.0.1:7778:80"
+    volumes:
+      - "./etc/nginx/default.conf:/etc/nginx/conf.d/default.conf:ro"
+      - "./index.php:/usr/share/nginx/index.php:ro"
+      - "./upload:/usr/share/nginx/upload"
+    restart: always
+    depends_on:
+      - php
+
+  php:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    restart: always
+    volumes:
+      - "./upload:/usr/share/nginx/upload"
+      - "./index.php:/usr/share/nginx/index.php:ro"
+      - "./etc/php/php.ini:/usr/local/etc/php/php.ini:ro"
