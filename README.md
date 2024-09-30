@@ -25,7 +25,7 @@
 │       └── Topic/.. & exploit
 ├── picoGym Practice Challenges
 │   └── picoCTF_ caas/.. Writeup & Patch 
-├── 2024 NTUT is1AB 新生盃
+├── 2024 NTUT is1ab 新生盃
 │   ├── Ｗeb Writeup Release
 │   ├── Finding Toyz/
 │   ├── BabyShell/
