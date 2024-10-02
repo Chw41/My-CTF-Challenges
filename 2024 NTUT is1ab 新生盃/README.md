@@ -1,7 +1,3 @@
----
-title: '2024 NTUT is1ab 新生盃 Web writeup release'
-disqus: hackmd
----
 
 2024 NTUT is1ab 新生盃 Web writeup release
 ===
