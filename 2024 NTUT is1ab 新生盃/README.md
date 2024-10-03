@@ -261,6 +261,8 @@ ln -s /readflag.c /tmp/symlink
 ## Get FLAG
 
 # file_upload
+![image](https://hackmd.io/_uploads/BJQMEQnCR.png)
+
 ## file_upload Solution
 ## Get FLAG
 
