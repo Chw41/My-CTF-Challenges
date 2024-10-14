@@ -264,6 +264,49 @@ ln -s /readflag.c /tmp/symlink
 ![image](https://hackmd.io/_uploads/BJQMEQnCR.png)
 
 ## file_upload Solution
+### 1. Code Review
+```php=
+<?php
+    session_start();
+
+    if (!isset($_SESSION['uid'])) {
+        $new_uid = uniqid();
+        $_SESSION['uid'] = $new_uid;
+        # 新增 uniqid() 存入 Session
+    }
+
+    $uid = $_SESSION['uid'];
+
+    if(isset($_FILES['file'])){
+        $file = $_FILES['file'];
+
+        if( preg_match('/h/i', $file['name']) !== 0
+        || preg_match('/h/i', file_get_contents($file['tmp_name'])) !== 0
+        || $file['size'] > 0x100
+        ){ die("Bad file!"); }
+        # file name 與 content 都不能有 ‘h’
+        # 檔案大小限制 256 bytes
+        
+        $uploadpath = 'upload/'.md5($uid).'/';
+        @mkdir($uploadpath);
+        @system("echo 'Forbidden' > $uploadpath/index.php");
+        move_uploaded_file($file['tmp_name'], $uploadpath.$file['name']);
+        # 上傳路徑使用uid MD5
+        # system()新增 $uploadpath/index.php 403
+        # 生成目錄檔案
+        
+        Header("Location: ".$uploadpath.$file['name']);
+        die("Upload success!");
+    }
+    highlight_file(__FILE__);
+?>
+
+<form method=POST enctype=multipart/form-data>
+  <input type=file name=file>
+  <input type=submit value=Upload>
+</form>
+```
+
 ## Get FLAG
 
 # resize image
