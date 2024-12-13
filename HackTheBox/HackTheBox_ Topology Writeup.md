@@ -19,7 +19,7 @@ https://app.hackthebox.com/machines/Topology
 
 ### Initial Enumeration
 
-●Start Machine: 
+●Start Machine: \
 ![](https://hackmd.io/_uploads/HJ8NFx2z6.png)
 
 
