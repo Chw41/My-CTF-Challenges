@@ -19,7 +19,7 @@ https://app.hackthebox.com/machines/Pilgrimage
 
 ### Initial Enumeration
 
-●Start Machine: 
+●Start Machine: \
 ![](https://hackmd.io/_uploads/HykMZrTWa.png)
 
 
