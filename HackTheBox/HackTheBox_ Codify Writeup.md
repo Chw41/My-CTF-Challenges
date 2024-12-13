@@ -19,7 +19,7 @@ https://app.hackthebox.com/machines/Codify
 
 ### Initial Enumeration
 
-●Start Machine: 
+●Start Machine: \
 ![image](https://hackmd.io/_uploads/Hyf0QK_E6.png)
 
 
@@ -56,14 +56,14 @@ Node.js code 線上測試平台
 
 
 #### 1.5 Browse http://codify.htb/editor
-Editor 使用vm2 v3.9.16 sandbox
-● [Sandbox Escape in vm2](https://github.com/patriksimek/vm2/blob/master/CHANGELOG.md#v3916-2023-04-11)
+Editor 使用vm2 v3.9.16 sandbox\
+● [Sandbox Escape in vm2](https://github.com/patriksimek/vm2/blob/master/CHANGELOG.md#v3916-2023-04-11)\
 ● [vm2 Sandbox Escape vulnerability CVE-2023-30547](https://github.com/advisories/GHSA-ch3r-j5x3-6q2m)
 
 ![image](https://hackmd.io/_uploads/rk0HUqd46.png)
 
 ### 2. CVE-2023-30547
-● [Sandbox Escape in vm2@3.9.16](https://gist.github.com/leesh3288/381b230b04936dd4d74aaf90cc8bb244) 
+● [Sandbox Escape in vm2@3.9.16](https://gist.github.com/leesh3288/381b230b04936dd4d74aaf90cc8bb244) \
 ● [handleException()](https://blog.csdn.net/scjrw/article/details/131798427): 使用handleException()方法處理異常。 handleException()方法先印出異常訊息，然後檢查是否還有更高層級的異常。如果有，我們使用handleException()方法繼續向上尋找引發該異常的異常，直到找到引發異常的來源。
 
 ```node.js=
