@@ -45,7 +45,7 @@ Service Info: Host: titanic.htb; OS: Linux; CPE: cpe:/o:linux:linux_kernel
 10.10.11.55     titanic.htb     
 ```
 瀏覽 http://titanic.htb/\
-![image](https://private-user-images.githubusercontent.com/141213003/431688175-9130ff5a-afe5-46c7-889e-9a8846da7a3e.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDQxNzgzMDgsIm5iZiI6MTc0NDE3ODAwOCwicGF0aCI6Ii8xNDEyMTMwMDMvNDMxNjg4MTc1LTkxMzBmZjVhLWFmZTUtNDZjNy04ODllLTlhODg0NmRhN2EzZS5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwNDA5JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDQwOVQwNTUzMjhaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT0yNWZjZjdhNzMwYzA3ZjlkMDgyMmI0OTIwMDk3ZGRmYzc1ZTQwYzRkZGM5MjFmNGYzYzYxZDkzYzUyZGQ4MTI3JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.ZcKpuQbriorYxO6OIfDQCxi1z_r1uy56mi-YREh_lcY)\
+![image](https://github.com/user-attachments/assets/9e62fb35-7062-499a-b06e-e20b52fb62bc)\
 `view-source:http://titanic.htb/`:
 ![image](https://hackmd.io/_uploads/H1UW2Y7Ayx.png)
 > POST /book
