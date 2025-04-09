@@ -203,9 +203,11 @@ safeuser:sha256:50000:fj3hhnoEyQ4S7vTkRFSXXA==:5Zpws+UkO9tZUvFHlSt04HUPbBTp8yqWg
 ┌──(chw㉿CHW)-[~/Downloads]
 └─$ hashcat gitea.hash /usr/share/wordlists/rockyou.txt --user
 hashcat (v6.2.6) starting in autodetect mode
-
+...
+developer:sha256:50000:i/PjRSt4VE+L7pQA1pNtNA==:5THTmJRhN7r:2528****
+...
 ```
-> developer:2528****
+> `developer`:`2528****`
 
 順利登入 Gitea:\
 ![image](https://hackmd.io/_uploads/Hyt2Rh701x.png)
