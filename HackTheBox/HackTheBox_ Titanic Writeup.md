@@ -6,11 +6,6 @@ disqus: hackmd
 HackTheBox: Titanic
 ===
 
-
-## Table of Contents
-
-[TOC]
-
 ## Topic
 
 ### Lab
