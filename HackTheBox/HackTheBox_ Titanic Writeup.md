@@ -9,7 +9,7 @@ HackTheBox: Titanic
 ## Topic
 
 ### Lab
-#### HackTheBox: 
+- HackTheBox: 
 https://app.hackthebox.com/machines/Titanic
 
 ### Initial Enumeration
