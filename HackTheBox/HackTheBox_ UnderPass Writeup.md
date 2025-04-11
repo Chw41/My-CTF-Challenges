@@ -164,6 +164,24 @@ iso.3.6.1.2.1.25.1.7.0 = No more variables left in this MIB View (It is past the
 >> http://underpass.htb/daloradius/ \
 >> ![image](https://hackmd.io/_uploads/SJ4RY8UCye.png)
 
+>[!Note]
+>1. `1.3.6.1.2.1.1.*`→ System MIB
+>- `1.3.6.1.2.1.1.1.0`:	系統描述：Linux 主機版本、核心版本（5.15.0-126）
+>- `1.3.6.1.2.1.1.2.0`:	主機支援的 SNMP MIB 模組 OID（識別對應的設備）
+>- `1.3.6.1.2.1.1.3.0`:	SNMP agent 開機時間（TimeTicks）
+>- `1.3.6.1.2.1.1.4.0`:	聯絡人資訊
+>- `1.3.6.1.2.1.1.5.0`:	主機名稱
+>- `1.3.6.1.2.1.1.6.0`:	位置資訊（可自定）
+>- `1.3.6.1.2.1.1.7.0`:	SNMP 支援的功能類型
+>- `1.3.6.1.2.1.1.9.*`: 支援的 SNMP MIB 模組
+>2. `1.3.6.1.2.1.25.*` → Host Resources MIB
+>- `25.1.1.0`:	SNMP 的 agent uptime
+>- `25.1.2.0`:	系統日期（Hex 格式）
+>- `25.1.3.0`:	系統 RAM 大小（以 KB 計）
+>- `25.1.4.0`:	開機引數（Linux 開機參數）→ /vmlinuz... root=/dev/mapper/...
+>- `25.1.5.0`:	可同時登入的使用者數限制（5）
+>- `25.1.6.0`:	當前已登入的使用者數（233）⚠️ 可能不準
+>- `25.1.7.0`:	系統正在執行的作業模式（通常 0 表示 normal）`
 
 #### 1.3 `/etc/hosts`
 將 UnDerPass.htb 加入 `/etc/hosts`
@@ -193,11 +211,11 @@ Password: `radius`
 ![image](https://hackmd.io/_uploads/rkfMXvURJe.png)
 
 嘗試登入：
-http://underpass.htb/daloradius/app/operators/home-main.php \
+http://underpass.htb/daloradius/app/operators/home-main.php\
 ![image](https://hackmd.io/_uploads/HkPH7DURkg.png)
 > 成功登入，瀏覽功能
 #### 3.1 List User
-在 Management > List Users 中發現 Username & Password:
+在 Management > List Users 中發現 Username & Password:\
 http://underpass.htb/daloradius/app/operators/mng-list-all.php \
 ![image](https://hackmd.io/_uploads/Hy63QwIRke.png)
 > `svcMosh`: `412DD4759978ACFCC81DEAB01B382403`
