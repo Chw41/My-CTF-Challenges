@@ -9,6 +9,8 @@ Explore my CTF challenges, HackTheBox writeups, and picoCTF solutions. Dive into
 │   ├── HackTheBox_ Pilgrimage Writeup
 │   ├── HackTheBox_ Codify Writeup
 │   ├── HackTheBox_ Topology Writeup
+│   ├── HackTheBox_ Titanic Writeup
+│   ├── HackTheBox_ UnderPass Writeup
 │   ├── HackTheBox_ LoveTok/
 │   ├── HackTheBox_ jscalc/
 │   ├── HackTheBox_ Neonify/
