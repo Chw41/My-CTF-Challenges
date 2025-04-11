@@ -223,7 +223,7 @@ Target: http://dev.linkvortex.htb/
 Updated 5596 paths from the index
 
 ```
-目標示要登入 CMS，在 git dump 的資料夾搜尋 `admin`, `password` 或 `pwd`
+目標是要登入 CMS，在 git dump 的資料夾搜尋 `admin`, `password` 或 `pwd`
 ```
 ┌──(chw㉿CHW)-[~/Tools/git-dumper/HTB]
 └─$ grep -riE 'admin|password|pwd' . 
