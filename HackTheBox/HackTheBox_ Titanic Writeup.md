@@ -224,7 +224,7 @@ developer@titanic:~$
 
 ## Privileges Escalation
 
-#### 4. Sudo -l
+### 4. Sudo -l
 ```
 developer@titanic:~$ sudo -l
 Matching Defaults entries for developer on titanic:
