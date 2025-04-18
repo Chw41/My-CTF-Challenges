@@ -95,7 +95,7 @@ $config_directories['staging'] = './files/config_83dddd18e1ec67fd8ff5bba2453c7fb
 $settings['hash_salt'] = 'aWFvPQNGZSz1DQ701dD4lC5v1hQW34NefHvyZUzlThQ';
 ```
 > `root`:`BackDropJ2024DS2024`
-> > 無法使用 mysql 賬號登入 CMS\
+> > 無法使用 mysql 帳號登入 CMS\
 > > ![image](https://hackmd.io/_uploads/Bk0W32k1xx.png)
 
 #### 1.2 `./core/profiles/standard/standard.info`
