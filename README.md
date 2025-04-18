@@ -12,6 +12,7 @@ Explore my CTF challenges, HackTheBox writeups, and picoCTF solutions. Dive into
 │   ├── HackTheBox_ Titanic Writeup
 │   ├── HackTheBox_ UnderPass Writeup
 │   ├── HackTheBox_ LinkVortex Writeup
+│   ├── HackTheBox_ Dog Writeup
 │   ├── HackTheBox_ LoveTok/
 │   ├── HackTheBox_ jscalc/
 │   ├── HackTheBox_ Neonify/
