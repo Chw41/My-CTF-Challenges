@@ -241,7 +241,7 @@ shell/
 ```
 ![image](https://hackmd.io/_uploads/H1vgeRJkgg.png)
 
-Manual installation 只接受 `.tar.gz`
+Manual installation 只接受 `.tar.gz`\
 ![image](https://hackmd.io/_uploads/Hku7lC1Jxl.png)
 #### 5.2 壓縮文件
 ```
