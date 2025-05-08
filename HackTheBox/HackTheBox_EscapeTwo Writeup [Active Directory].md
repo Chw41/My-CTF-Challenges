@@ -96,7 +96,7 @@ Host script results:
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
 Nmap done: 1 IP address (1 host up) scanned in 126.75 seconds
 ```
-> DNS, SMB, ldap, HTTP, kpasswd5, ms-sql, Kerberos
+> DNS, SMB, ldap, HTTP, kpasswd5, ms-sql, Kerberos\
 > `DC01.sequel.htb`
 
 編輯 `/etc/hosts`
