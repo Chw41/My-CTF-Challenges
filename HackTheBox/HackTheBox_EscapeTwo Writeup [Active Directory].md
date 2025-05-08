@@ -99,27 +99,6 @@ Nmap done: 1 IP address (1 host up) scanned in 126.75 seconds
 > DNS, SMB, ldap, HTTP, kpasswd5, ms-sql, Kerberos\
 > `DC01.sequel.htb`
 
-編輯 `/etc/hosts`
-```
-┌──(chw㉿CHW)-[~]
-└─$ cat /etc/hosts            
-10.10.11.47     linkvortex.htb    
-```
-瀏覽 http://linkvortex.htb/ \
-![image](https://hackmd.io/_uploads/S1MG7dUCyl.png)
-> Page 最下面有個 Sign up，但沒有功能
-> >view-source 沒有明顯漏洞
-
-- 瀏覽 http://linkvortex.htb/robots.txt
-![image](https://hackmd.io/_uploads/rkgkADuLA1x.png)
-
-- 瀏覽 http://linkvortex.htb/sitemap.xml
-![image](https://hackmd.io/_uploads/r1zld_L0yl.png)
-
-- 瀏覽 http://linkvortex.htb/ghost/
-![image](https://hackmd.io/_uploads/rJuQuOLAye.png)
-
-
 ## Solution
 
 ### 1. Kerberoasting
