@@ -15,6 +15,7 @@ Explore my CTF challenges, HackTheBox writeups, and picoCTF solutions. Dive into
 │   ├── HackTheBox_ Dog Writeup
 │   ├── HackTheBox_ Code Writeup
 │   ├── HackTheBox_ Heal Writeup
+│   ├── HackTheBox_ EscapeTwo Writeup [AD]
 │   ├── HackTheBox_ LoveTok/
 │   ├── HackTheBox_ jscalc/
 │   ├── HackTheBox_ Neonify/
