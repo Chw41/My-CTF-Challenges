@@ -5,6 +5,7 @@ Explore my CTF challenges, HackTheBox writeups, and picoCTF solutions. Dive into
 ```
 .
 ├── README.md
+├── H̶a̶c̶k̶T̶h̶e̶B̶o̶x̶
 ├── picoCTF
 │   └── 2024 
 │       ├── picoCTF 2024 writeup 
